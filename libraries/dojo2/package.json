@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "cross-env LIBRARY_NAME=@dojo/core karma start",
+    "test": "cross-env LIBRARY_NAME=@dojo/widget-core karma start",
     "build": "npm run test; DIST=../../docs/libraries/dojo2 && mkdir -p $DIST && cp -r ./meta $DIST/meta && cp -r ./results $DIST/results"
   },
   "devDependencies": {
@@ -23,11 +23,10 @@
     "webpack": "3.10.0"
   },
   "dependencies": {
-    "@dojo/core": "2.0.0-beta3.1",
-    "@dojo/has": "2.0.0-beta3.1",
-    "@dojo/interfaces": "2.0.0-beta3.1",
-    "@dojo/shim": "2.0.0-beta3.1",
-    "@dojo/widget-core": "2.0.0-beta3.2",
+    "@dojo/core": "0.3.1",
+    "@dojo/has": "0.1.2",
+    "@dojo/shim": "0.2.5",
+    "@dojo/widget-core": "0.8.0",
     "@webcomponents/webcomponentsjs": "1.0.19"
   }
 }
